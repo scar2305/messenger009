@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   }
+body{
+   color:orangered;
+   font-family: 'Open Sans', sans-serif;
+   background-image: url("https://res.cloudinary.com/dowi1ijgg/image/upload/v1579931512/TTHA9494_do1s4u.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   }
+
+
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:transparent;
+      
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding: 20px 30px 10px 40px;
+      text-decoration: none;
+      font-family: 'Luckiest Guy', cursive;
+      color:orangered;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      text-decoration: none;
+      color:black;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:orange;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+
+   nav{
+      font-family: 'Luckiest Guy', cursive; 
+      }
+   nav a{
+      text-decoration: none;
+      font-family: 'Luckiest Guy', cursive;
+      color:orangered;
+      }
+   nav a:hover {
+      text-decoration: none;
+      color:orangered ;
+      }
+
+   .nav-container{
+      display: flex;
+      flex-direction: row;
+      }
+   .nav-container div{
+      padding:20px 30px 10px 40px;
+      }
+.name{
+   margin-left: 30px;
+   padding-top: 100px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
+   font-size: 30px;
+   }
+article{
+   width:800px;
+   margin-left:30px;
+   padding-top:100px;
+   }
+h2{
+   font-weight: bold;
+   }
+.portfolio-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 40px;
+   }
+.portfolio-container div{
+   width: 250px;
+   height: 200px;
+   border: 1px solid red;
+   border-radius: 5px;
+   background-image: url("https://res.cloudinary.com/dowi1ijgg/image/upload/v1579933373/Screenshot_2_bpxld8.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   }
+ .view-project a{
+   text-decoration: none;
+   font-weight: bold;
+   color:black ;
+   font-size: 1.3em;
+   float:left;
+   }
+.view-project a:nth-child(2){
+   padding-left: 115px;
+   }
+.view-project a:nth-child(3){
+   padding-left: 115px;
+   }
+.clear{
+   clear: both;
+   }
+.blog a{
+   color:orangered;
+   }
+.blogpost-container{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:-18px;
+  border: black;
+}
+.blogpost {
+   border: 1px solid rgb(0, 0, 0);
+   border-radius: 5px;
+   padding: 10px;
+   margin:10px;
+   width:40%;
+   font-size: 0.8em;
+}
+.contact{
+   margin-left: 30px;
+   padding-top: 100px;
+   }
+.contact img{
+   width:150px;
+   height:200px;
+   border-radius: 10%;
+   float: left;
+   margin: 20px 10px 0 0;
+   }
+
+   .contact-info{
+      color: white;
+      float: left;
+      margin: 20px 30px 0 0;
+      margin-left: 30px;
+   padding-top: 100px;
+   }
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+   width: 100%; /* Full width */
+   padding: 12px; /* Some padding */ 
+   border: 1px solid #ccc; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+ 
+ /* Style the submit button with a specific background color etc */
+ input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ /* When moving the mouse over the submit button, add a darker green color */
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+ 
+ /* Add a background color and some padding around the form */
+ .contact-form {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+ }
+ .btn {
+   padding: 0.9rem 2rem;
+   margin-top: 0.5rem;
+   outline: none;
+   border: none;
+   border-radius: 3rem;
+   background: lightgreen;
+   color: #fff;
+   transition: all 0.3s ease-out;
+   backface-visibility: hidden; }
+   .btn:hover {
+     transform: translateY(-7px);
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+     background: #510a32; }
+   .btn:active {
+     transform: translateY(-5px);
+     box-shadow: 2.5rem 1rem rgba(0, 0, 0, 0.2); }
+ 
+
+
+
+.bottom{
+  margin-top:30px;
+   }
+.bottom a{
+  margin-left:30px;
+  font-family: 'Luckiest Guy', cursive;
+  color:rgb(250, 9, 210);
+  text-decoration:none;
+  }
+.bottom a:hover{
+  color:orange;
+  }
+/*The Modal Open button*/
+.myBtn {
+
+   padding: 0.9rem 2rem;
+   margin-top: 0.5rem;
+   outline: none;
+   border: none;
+   border-radius: 3rem;
+   background: dodgerblue;
+   color: black ;
+   transition: all 0.3s ease-out;
+   backface-visibility: hidden;
+      position: fixed;
+      right: 0px;
+      top: 600px;
+      transition: all 0.2s ease-in 0s;
+      z-index: 9999;
+      cursor: pointer;
+      }
+
+   .myBtn:hover {
+     transform: translateY(-7px);
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+     background: yellow; 
+     right: -7px;
+   }
+   .myBtn:active {
+     transform: translateY(-5px);
+     box-shadow: 2.5rem 1rem rgba(0, 0, 0, 0.2);
+     
+
+}
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%; /* Could be more or less, depending on screen size */
+ }
+ 
+ /* The Close Button */
+ .close {
+   color: black;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: greenyellow;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ /* Modal Header */
+.modal-header {
+   padding: 2px 16px;
+   background-color: orangered;
+   color: white;
+ }
+ 
+ /* Modal Body */
+ .modal-body {padding: 2px 16px;}
+ 
+ /* Modal Footer */
+ .modal-footer {
+   padding: 2px 16px;
+   background-color: orangered;
+   color: white;
+ }
+ 
+ /* Modal Content */
+ .modal-content {
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   animation-name: animatetop;
+   animation-duration: 0.4s
+ }
+ 
+ /* Add Animation */
+ @keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+ }
+
+
+footer{
+  text-align:center;
+  font-size:0.9em;
+  }
+

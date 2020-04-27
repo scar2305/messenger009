@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<link rel="stylesheet" href="contactform.css">
+
+    <title>Review/comment form</title>
+    <script>
+        function feedback(){
+            var formInput=document.getElementById("finput");
+            var nameCollector=prompt("Enter Your Name!!","");
+            var x= /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+          if(formInput.value.match(x)){
+            alert(nameCollector +" Thanks for the Review,it will be delivered to the Response Team!!!");
+          }
+          else
+          alert("Fill in all Fields Correctly!!!");
+          }
+          </script>
+   
+  </head>
+  <body>
+
+
+<div class="contact-form">
+    <form name="contactForm" action="mail.php" method="POST"></form>
+  
+<label for="email" name="finput">Email</label>
+      <input type="text" id="finput" name="email" placeholder="Your Email.." required=" ">
+
+      <label for="username" name="finput">Username</label>
+      <input type="text" id="finput" name="username" placeholder="Your Username.." required=" ">
+  
+      <label for="subject" name="subject">Subject</label>
+      <textarea  name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <button class="btn" onclick="feedback()">Submit</button>
+  
+    </form>
+  </div>
+  </body>
